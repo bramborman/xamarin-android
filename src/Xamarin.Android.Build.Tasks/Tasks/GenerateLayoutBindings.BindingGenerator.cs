@@ -325,6 +325,12 @@ namespace Xamarin.Android.Tasks
 				state.WriteIndent (text);
 			}
 
+			protected void WriteLine (State state, string text)
+			{
+				EnsureArgument (state, nameof (state));
+				state.WriteLine (text);
+			}
+
 			protected void WriteLineIndent (State state, string text)
 			{
 				EnsureArgument (state, nameof (state));
